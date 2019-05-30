@@ -1,0 +1,182 @@
+body {
+  background: url(https://image.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-77.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  }
+  
+  .cell {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 2.em;
+  }
+  
+  .formLine {
+    margin:1px;
+    padding:1px;
+    background-color: cornflowerblue;
+  }
+
+  table{
+      border: 3px solid steelblue;
+      margin: auto;
+       padding: 1px; 
+  }
+
+  .Num1{
+    color: blue;
+  }
+
+  .Num2{
+    color: green;
+  }
+
+  .Num3{
+    color: red;
+  }
+
+  .Num4{
+    color: darkblue;
+  }
+
+  .Num5{
+    color: darkgreen;
+  }
+
+  .Num6{
+    color: darkred;
+  }
+
+  .Num7{
+    color: steelblue;
+  }
+
+  .Num8{
+    color: black;
+  }
+
+  .level{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    color: #00225b;
+    cursor: pointer;
+  }
+
+  .board-container{
+    margin: auto;
+    width: 100%;
+    padding: 1px;
+  }
+
+  .Flags , .timeCount{
+    padding: 15px;
+    margin: 3px;
+    color: red;
+    background: black;
+  }
+
+
+  .emoji{
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+  .lifes{
+    margin: 1px;
+    padding: 10px;
+    font-size: 15px;
+    color: steelblue;
+  }
+
+  .bestScore , .bestScoreMedium ,.bestScoreHard{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 100px;
+    height: 20px;
+    border: 3px solid darkgreen;
+    background: white;
+    color: steelblue;
+    font-weight: bold;
+    border-top: none;
+  }
+
+  .bestScoreName{
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    height: 20px;
+    border: 3px solid green;
+    border-bottom: none;
+    color: white;
+    background: steelblue;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .hints{
+margin: 20px;
+  }
+
+  .hint{
+  margin: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  }
+
+
+  .hintAlert{
+ color: orange;
+ font-weight: bold;
+  }
+
+  .sound{
+    position: absolute;
+    left: 125px;
+    cursor: pointer;
+  }
+
+ .music{
+    position: absolute;
+    left: 150px;
+    cursor: pointer;
+  }
+
+  .selectedLevel{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border: solid #00225b;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .ExpertOnly{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    border-bottom: none;
+    color: darkorange;
+    /* width: 100px;
+    height: 20px; */
+    font-size: 13px;
+  }
+
+  .level:hover{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border: solid #00225b;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
