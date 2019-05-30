@@ -32,7 +32,6 @@ function renderProjects() {
 
 function renderModal(projectId) {
     var FoundProject = findProjectById(projectId)
-    console.log(FoundProject);
     $('.modal-project').html(` <div class="portfolio-modal modal fade" id="portfolioModal${FoundProject.id}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
