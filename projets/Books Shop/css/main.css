@@ -1,0 +1,75 @@
+@import url(../lib/bs4/css/bootstrap.min.css);
+h1,
+.table {
+    text-align: center;
+}
+
+body {
+    color: steelblue;
+    margin: 0;
+    padding: 0;
+}
+
+.book {
+    color: darkgray;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.table img {
+    width: 60px;
+}
+
+.table * {
+    margin: 0;
+    padding: 0;
+}
+
+.modal-title {
+    color: steelblue;
+}
+
+.add-book,
+.add-book * {
+    margin: 1px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.add-book {
+    border: 1px solid whitesmoke;
+}
+
+.add-book {
+    display: none;
+}
+
+.modal * {
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.text-muted {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+    margin: 3px;
+}
+
+.img-fluid {
+    width: 200px;
+    height: 200px;
+}
+
+.rate-book * {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.rate-book-change {
+    background: grey;
+    padding: 2px;
+}

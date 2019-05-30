@@ -16,7 +16,7 @@ function renderProjects() {
                     <i class="fa fa-plus fa-3x"></i>
                 </div>
             </div>
-            <img class="img-fluid" src="${project.url}" />
+            <img class="img-fluid" src="${project.img}" />
         </a>
         <div class="portfolio-caption">
             <h4>${project.title}</h4>
@@ -48,12 +48,13 @@ function renderModal(projectId) {
                 <!-- Project Details Go Here -->
                 <h2>${FoundProject.title}</h2>
                 <p class="item-intro text-muted">${FoundProject.name}</p>
-                <img class="img-fluid d-block mx-auto" src="${FoundProject.url}">
+                <img class="img-fluid d-block mx-auto" src="${FoundProject.img}">
                 <p>${FoundProject.desc}</p>
                 <ul class="list-inline">
                   <li>Date: ${FoundProject.publishedAt}</li>
                   <li>Client: ${FoundProject.labels[0]}</li>
-                  <li>Category: ${FoundProject.labels[1]}</li>
+                  <li>Category: ${FoundProject.labels[1]}</li> 
+                  <li class="project-link"><a href='${FoundProject.url}'>Try ${FoundProject.title}</a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
