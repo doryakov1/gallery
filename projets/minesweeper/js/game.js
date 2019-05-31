@@ -6,15 +6,7 @@ var gLevel = {
     SIZE: 4,
     MINES: 2
 };
-var gMusic = new Audio('sound/music.mp3');
-navigator.mediaDevices.getUserMedia({ audio: true })
-    .then(function (stream) {
-        gMusic.play();
-        console.log('You let me play music')
-    })
-    .catch(function (err) {
-        console.log('No music for you!')
-    });
+
 var gSound = createSound();
 var gHintOn;
 var gHints;
@@ -42,7 +34,7 @@ function init() {
         secsPassed: 0,
         gameIsOver: false
     };
-    document.querySelector('.timeCount').textContent = gGame.secsPassed +'s';
+    document.querySelector('.timeCount').textContent = gGame.secsPassed + 's';
     gBoard = buildBoard();
     // console.table(gBoard);
     printBoard(gBoard, '.board-container');
@@ -110,11 +102,12 @@ function dificulut(elDificuluty, elSelectedDificuluty) {
             init()
             break;
 
-        default: gLevel = {
-            SIZE: 4,
-            MINES: 2,
-            DIFICULT: 'easy'
-        };
+        default:
+            gLevel = {
+                SIZE: 4,
+                MINES: 2,
+                DIFICULT: 'easy'
+            };
             document.querySelector('.Flags').textContent = 4 * 4;
 
             elSelectedDificuluty.classList.remove("level");
@@ -156,7 +149,7 @@ function countNeighborsMines(iDx, jDx, newBoard) {
 
 function timeCounting() {
 
-    document.querySelector('.timeCount').textContent = gGame.secsPassed++  +'s';
+    document.querySelector('.timeCount').textContent = gGame.secsPassed++ + 's';
     checkVictroy()
 }
 
@@ -222,7 +215,7 @@ function firstClickGame(i, j) {
 function hintMe() {
     if (!gGame.isOn) {
         document.querySelector('.hintAlert').textContent = "Game is not on!";
-        setTimeout(function () {
+        setTimeout(function() {
             document.querySelector('.hintAlert').textContent = "";
         }, 2000)
         return;

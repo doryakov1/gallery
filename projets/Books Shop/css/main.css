@@ -73,3 +73,9 @@ body {
     background: grey;
     padding: 2px;
 }
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}

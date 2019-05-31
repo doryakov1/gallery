@@ -1,101 +1,102 @@
 body {
-  background: url(https://image.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-77.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  }
-  
-  .cell {
+    background: url(https://image.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-77.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.cell {
     width: 24px;
     height: 24px;
     text-align: center;
     font-size: 2.em;
-  }
-  
-  .formLine {
-    margin:1px;
-    padding:1px;
+}
+
+.formLine {
+    margin: 1px;
+    padding: 1px;
     background-color: cornflowerblue;
-  }
+}
 
-  table{
-      border: 3px solid steelblue;
-      margin: auto;
-       padding: 1px; 
-  }
+table {
+    border: 3px solid steelblue;
+    margin: auto;
+    padding: 1px;
+}
 
-  .Num1{
+.Num1 {
     color: blue;
-  }
+}
 
-  .Num2{
+.Num2 {
     color: green;
-  }
+}
 
-  .Num3{
+.Num3 {
     color: red;
-  }
+}
 
-  .Num4{
+.Num4 {
     color: darkblue;
-  }
+}
 
-  .Num5{
+.Num5 {
     color: darkgreen;
-  }
+}
 
-  .Num6{
+.Num6 {
     color: darkred;
-  }
+}
 
-  .Num7{
+.Num7 {
     color: steelblue;
-  }
+}
 
-  .Num8{
+.Num8 {
     color: black;
-  }
+}
 
-  .level{
+.level {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
     margin: 5px;
     color: #00225b;
     cursor: pointer;
-  }
+}
 
-  .board-container{
+.board-container {
     margin: auto;
     width: 100%;
     padding: 1px;
-  }
+}
 
-  .Flags , .timeCount{
+.Flags,
+.timeCount {
     padding: 15px;
     margin: 3px;
     color: red;
     background: black;
-  }
+}
 
-
-  .emoji{
+.emoji {
     margin: 3px;
     font-size: 20px;
     cursor: pointer;
-  }
+}
 
-
-  .lifes{
+.lifes {
     margin: 1px;
     padding: 10px;
     font-size: 15px;
     color: steelblue;
-  }
+}
 
-  .bestScore , .bestScoreMedium ,.bestScoreHard{
+.bestScore,
+.bestScoreMedium,
+.bestScoreHard {
     position: absolute;
     top: 40px;
     left: 10px;
@@ -106,9 +107,9 @@ body {
     color: steelblue;
     font-weight: bold;
     border-top: none;
-  }
+}
 
-  .bestScoreName{
+.bestScoreName {
     position: absolute;
     left: 10px;
     width: 100px;
@@ -119,37 +120,36 @@ body {
     background: steelblue;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-  }
+}
 
-  .hints{
-margin: 20px;
-  }
+.hints {
+    margin: 20px;
+}
 
-  .hint{
-  margin: 50px;
-  font-size: 15px;
-  cursor: pointer;
-  }
+.hint {
+    margin: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+.hintAlert {
+    color: orange;
+    font-weight: bold;
+}
 
-  .hintAlert{
- color: orange;
- font-weight: bold;
-  }
-
-  .sound{
+.sound {
     position: absolute;
     left: 125px;
     cursor: pointer;
-  }
+}
 
- .music{
+.music {
     position: absolute;
     left: 150px;
     cursor: pointer;
-  }
+}
 
-  .selectedLevel{
+.selectedLevel {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
@@ -157,9 +157,9 @@ margin: 20px;
     border: solid #00225b;
     border-radius: 100px;
     cursor: pointer;
-  }
+}
 
-  .ExpertOnly{
+.ExpertOnly {
     position: absolute;
     left: 10px;
     top: 50px;
@@ -168,9 +168,9 @@ margin: 20px;
     /* width: 100px;
     height: 20px; */
     font-size: 13px;
-  }
+}
 
-  .level:hover{
+.level:hover {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
@@ -179,4 +179,9 @@ margin: 20px;
     border-radius: 100px;
     cursor: pointer;
     transition: 0.5s;
-  }
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
