@@ -5,6 +5,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
+    margin: auto;
 }
 
 .cell {
@@ -21,9 +22,11 @@ body {
 }
 
 table {
-    border: 3px solid steelblue;
     margin: auto;
+    border: 3px solid steelblue;
     padding: 1px;
+    /* width: 360px;
+    height: 500px; */
 }
 
 .Num1 {
@@ -181,8 +184,7 @@ table {
     transition: 0.5s;
 }
 
-.container {
-    margin: auto;
-    width: auto;
-    height: auto;
+.board-container {
+    width: 500px;
+    height: 500px;
 }
