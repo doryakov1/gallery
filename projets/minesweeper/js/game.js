@@ -6,7 +6,8 @@ var gLevel = {
     SIZE: 4,
     MINES: 2
 };
-
+var gMusic = null;
+document.querySelector('.music').textContent = '🔕';
 var gSound = createSound();
 var gHintOn;
 var gHints;
