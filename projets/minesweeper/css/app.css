@@ -5,7 +5,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
-    margin: auto;
 }
 
 .cell {
@@ -25,8 +24,6 @@ table {
     margin: auto;
     border: 3px solid steelblue;
     padding: 1px;
-    /* width: 360px;
-    height: 500px; */
 }
 
 .Num1 {
@@ -68,12 +65,6 @@ table {
     margin: 5px;
     color: #00225b;
     cursor: pointer;
-}
-
-.board-container {
-    margin: auto;
-    width: 100%;
-    padding: 1px;
 }
 
 .Flags,
@@ -168,8 +159,6 @@ table {
     top: 50px;
     border-bottom: none;
     color: darkorange;
-    /* width: 100px;
-    height: 20px; */
     font-size: 13px;
 }
 
@@ -184,7 +173,73 @@ table {
     transition: 0.5s;
 }
 
-.board-container {
-    width: 500px;
-    height: 500px;
+@media (max-width: 1060px) {
+    .cell {
+        width: 50px;
+        height: 50px;
+        font-size: 4.em;
+    }
+    .formLine {
+        margin: 4px;
+        padding: 2px;
+    }
+    table {
+        border: 6px solid steelblue;
+        padding: 2px;
+    }
+    .level {
+        font-size: 30px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .Flags,
+    .timeCount {
+        padding: 30px;
+        margin: 9px;
+    }
+    .emoji {
+        margin: 9px;
+        font-size: 40px;
+    }
+    .lifes {
+        margin: 4px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .bestScore,
+    .bestScoreMedium,
+    .bestScoreHard {
+        width: 50px;
+        height: 40px;
+        border: 6px solid darkgreen;
+    }
+    .bestScoreName {
+        width: 50px;
+        height: 40px;
+        top: 200px;
+        border: 6px solid green;
+    }
+    .hints {
+        margin: 50px;
+    }
+    .hint {
+        margin: 110px;
+        font-size: 30px;
+    }
+    .selectedLevel {
+        font-size: 30px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 200px;
+    }
+    .ExpertOnly {
+        font-size: 26px;
+    }
+    .level:hover {
+        font-size: 30px;
+        padding: 10px;
+        margin: 15px;
+        border-radius: 200px;
+        transition: 0.5s;
+    }
 }
